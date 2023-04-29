@@ -1,34 +1,49 @@
-# Mapping-Earthquakes
-Module-14
+# Mapping_Earthquakes
 
-**Overview**
-
-The purpose of this challenge is to use HTML, JavaScript, and CSS to create earthquake maps and overlay them on top of eachother. Ideally we are creating three different maps that can have three different overalays. The overlays will be earthquakes, tectonic plates and then earthquakes with a magnitude greater than 4.5.
-
-**Process**
-
-First thing we did was added two different views to the map; streets and satelites. For each of the layers, all earthquakes, tectonic plates, and earthquakes with a magnitude of 4.5 or greater we followed the same strucutre on adding the information. We added the data using d3.json(), geoJSON(), and then added that to the allEarthquakes, tectonicPlates, and majorEarthquakes layers and then added that layer group to the map. 
-
-![Screen Shot 2023-03-01 at 11 31 37 PM](https://user-images.githubusercontent.com/118235205/222362350-ee29a4dd-b0b8-4197-b1b6-9b8e1e6fbd23.png)
-
-![Screen Shot 2023-03-01 at 11 31 48 PM](https://user-images.githubusercontent.com/118235205/222362546-984517dc-c162-4012-ab3a-aa23171bfc21.png)
+## Overview
+Using geographical data about recent earthquakes this map was created with some features that can be toggled on and off. It provides for three different background viewing options as well as data layers for all earthquakes, major earthquakes, and tectonic plates.  
 
 
-![Screen Shot 2023-03-01 at 11 32 01 PM](https://user-images.githubusercontent.com/118235205/222362663-918a2b3d-4992-4903-925d-f721e55f3718.png)
+### Resources
 
-![Screen Shot 2023-03-01 at 11 32 15 PM](https://user-images.githubusercontent.com/118235205/222362675-f05d40dd-bf61-4af7-aacb-dc234efcb960.png)
+- Software:
+    - Visual Studio Code (Version: 1.76.2)
+    - Google Chrome 
+    
+- Languages: JavaScript, CSS, HTML
 
-![Screen Shot 2023-03-01 at 11 32 24 PM](https://user-images.githubusercontent.com/118235205/222362694-433d5c13-a4a8-489b-aa98-4f084c1ea931.png)
+- Data  API’s:
+    - https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
+    - https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson
+    - https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_plates.json
+    
+- Starter Code: 
+    - [earthquake_challenge/starter_code/tectonic_plate_starter_logic.js]( earthquake_challenge/starter_code/tectonic_plate_starter_logic.js)
+    - [earthquake_challenge/starter_code/major_eq_starter_logic.js]( earthquake_challenge/starter_code/major_eq_starter_logic.js)
+    
 
-To add an aditional map I added a dark style, using the same style of code as when adding the street and satelite view. 
+### Code: 
+- HTML: [earthquake_challenge/index.html](earthquake_challenge/index.html)
+- CSS: [earthquake_challenge/static/css/style.css](earthquake_challenge/static/css/style.css)
+- JavaScript:  [earthquake_challenge/static/js/challenge_logic.js](earthquake_challenge/static/js/challenge_logic.js)
 
-![Screen Shot 2023-03-01 at 11 35 33 PM](https://user-images.githubusercontent.com/118235205/222362717-2c4215f7-6268-40b3-a6ec-7b49920b7f03.png)
 
+### Images 
 
+#### Layer Menu
 
-**Analysis** 
+![earthquake_challenge/images/layer_menu.png](earthquake_challenge/images/layer_menu.png)
 
-As we can see from the Map that most earthquakes are concentrated around tectonic plates which is reanable to assume is correct based on teh basic knowledge of how earthquakes happen. 
+#### Legend
 
-![Screen Shot 2023-03-01 at 11 35 56 PM](https://user-images.githubusercontent.com/118235205/222362763-7432cc0a-7095-4667-ae47-8818134b98c5.png)
+![earthquake_challenge/images/legend.png](earthquake_challenge/images/legend.png)
+
+#### Street Map
+![earthquake_challenge/images/street_map.png](earthquake_challenge/images/street_map.png)
+
+#### Satellite Map 
+![earthquake_challenge/images/satellite_map.png](earthquake_challenge/images/satellite_map.png)
+
+#### Night Navigation Map
+![earthquake_challenge/images/night_nav_map.png](earthquake_challenge/images/night_nav_map.png)
 
